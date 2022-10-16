@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("fonts/Roboto-Black.ttf");
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --blue-primary-color: #152535;
+    --blue-secondary-color: #294256;
+    --yellow-color: #FAA61A;
+    --pink-color: #FBBBD0;
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.bg-blue-primary {
+    background-color: var(--blue-primary-color);
+}
+
+.bg-blue-secondary {
+    background-color: var(--blue-secondary-color);
+}
+
+.opaity-80 {
+    opacity: .8;
+}
+
+.bg-white {
+    background-color: var(--white-color);
+}
+
+.bg-yellow {
+    background-color: var(--yellow-color);
+}
+
+.bg-pink {
+    background-color: var(--pink-color);
+}
+
+.text-blue-primary {
+    color: var(--blue-primary-color);
+}
+
+.text-color-white {
+    color: var(--white-color);
+}
+
+.underline-hover::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background-image: linear-gradient(to right top, yellow, red);
+    display: block;
+    transition: 300ms all;
+}
+    .underline-hover:hover::after {
+        width: 100%;
+    }
+
+.arrow:hover {
+    right: 0;
+    position: relative;
+    animation: arrow .4s alternate infinite;
+}
+@keyframes arrow {
+    to {
+        right: 10px;
+    }
+}
+
+/* header */
+
+#header {
+    width: 100%;
+    height: 824px;
+    background-image: url('img/Mask\ Group\ 29.png');
+    background-size: 100% 100%;
+}
+
+#navbar {
+    border-radius: 100px;
+    padding: .5rem 2.5rem;
+}
+
+#navmenu li.nav-item {
+    margin: 0 1.2rem;
+}
+
+#social li {
+    margin: 0 .5em;
+}
+
+.image img {
+    width: 110%;
+}
+
+#navmenu a {
+    color: var(--white-color);
+}
+    #navmenu a:hover {
+        color: var(--yellow-color);
+    }
+
+button.btn-update {
+    color: var(--white-color);
+    border-color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+    button.btn-update:hover {
+        color: var(--blue-secondary-color);
+        border-color: var(--white-color);
+    }
+    
+.logo {
+    width: 120px;
+    z-index: 1500;
+    background: transparent 0% 0% no-repeat padding-box;
+}
+
+.offcanvas-backdrop.show {
+    opacity: .0;
+}
+
+.offcanvas.offcanvas-end {
+    border: 0;
+    width: 100%;
+}
+
+.btn-close {
+    width: 2em;
+    font-size: 30px;
+    opacity: 1;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+.w-90 {
+    width: 95%;
+    padding-left: 2.1rem;
+    font-family: 'Roboto';
+    font-size: 24px;
+}
+
+.w-90 span {
+    font-size: 10px;
+}
+
+/* breackpoints header */
+
+@media (max-width: 1400px) {
+    #navmenu li.nav-item {
+        margin: 0 3px;
+    }
+    
+    #social li {
+        margin: 0 3px;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        padding: .5rem 1rem;
+    }
+    
+    #navbar .logo img {
+        width: 150px;
+    }
+    
+    a.nav-link {
+        font-size: 10px;
+    }
+
+    button.btn-update {
+        font-size: 10px;
+    }
+
+    #social li {
+        font-size: 0;
+    }
+    .image img {
+        width: 100%;
+        max-height: 150px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    p {
+        font-size: 15px;
+    }
+    #header {
+        height: 50vh;
+    }
+
+    #navbar {
+        border-radius: 0;
+    }
+
+    #navmenu li.nav-item {
+        padding-top: .8rem;
+    }
+
+    a.nav-link, button.btn-update {
+        font-size: 20px;
+    }
+
+    
+    #social li {
+        padding-top: .5rem;
+        margin: 0 .8rem;
+    }
+    
+}
