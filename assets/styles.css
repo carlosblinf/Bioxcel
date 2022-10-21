@@ -395,8 +395,13 @@ span.navbar-icon {
         padding-left: 2rem;
     }
 }
-/* @media (max-width: 576px) {
-    .card {
+@media (max-width: 576px) {
+    @supports (-moz-transform: translate(0, 0)) {
+        main {
+            margin-top: 7rem;
+        }
+    }
+    /* .card {
         opacity: 1;
         transform: scale(1);
     }
@@ -411,8 +416,8 @@ span.navbar-icon {
     }
     #card4 {
         transition: none;
-    }
-} */
+    } */
+}
 
 /* footer */
 footer {
