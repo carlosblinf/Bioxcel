@@ -24,3 +24,7 @@ observer.observe(card1);
 observer.observe(card2);
 observer.observe(card3);
 observer.observe(card4);
+
+const popup = () => {
+    window.open('https://vimeo.com/253989945', 'popup', 'left=300, top=200, width=800, height=400, toolbar=0, resizable=1')
+}
