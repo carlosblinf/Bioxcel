@@ -84,7 +84,7 @@
 
 #header {
     width: 100%;
-    height: 824px;
+    height: 100vh;
     background-image: url('img/Mask\ Group\ 29.png');
     background-size: 100% 100%;
 }
@@ -213,6 +213,7 @@ button.btn-update {
 
 }
 
+/* menu icon */
 span.navbar-icon {
     display: flex;
     flex-direction: column;
@@ -283,8 +284,6 @@ span.navbar-icon {
 
 /* services */
 .services {
-    /* padding: 0 auto; */
-    /* margin: 0 auto; */
     align-items: center;
     text-align: center;
 }
@@ -294,7 +293,27 @@ span.navbar-icon {
     align-content: center;
     background-color: var(--blue-primary-color);
     color: var(--white-color);
+
+    opacity: 0;
+    transform: scale(0.9);
+    /* transition: .7s ease-in-out all; */
 }
+    #card1 {
+        transition: .4s ease-in-out all;
+    }
+    #card2 {
+        transition: .8s ease-in-out all;
+    }
+    #card3 {
+        transition: 1.2s ease-in-out all;
+    }
+    #card4 {
+        transition: 1.6s ease-in-out all;
+    }
+    .card.visible {
+        opacity: 1;
+        transform: scale(1);
+    }
 
     .card .image-header {
         width: 30%;
@@ -400,7 +419,6 @@ footer {
 @media (max-width: 576px) {
     footer {
         height: 480px;
-        /* width: 100%; */
     }
     footer .logo-img {
         width: 60%;
