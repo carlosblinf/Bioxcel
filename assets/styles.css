@@ -378,15 +378,15 @@ span.navbar-icon {
     
 .reference {
     margin: 4rem 0;
-    font-family: 'Roboto Bold';
+    /* font-family: 'Roboto Bold'; */
     color: var(--blue-primary-color);
 }
     .reference ol {
         padding-left: 1rem;
     }
     .reference p {
-        font-family: 'Roboto';
-        font-weight: 600;
+        /* font-family: 'Roboto'; */
+        font-weight: 300;
     }
 
 @media (min-width: 576px) {
@@ -395,6 +395,24 @@ span.navbar-icon {
         padding-left: 2rem;
     }
 }
+/* @media (max-width: 576px) {
+    .card {
+        opacity: 1;
+        transform: scale(1);
+    }
+    #card1 {
+        transition: none;
+    }
+    #card2 {
+        transition: none;
+    }
+    #card3 {
+        transition: none;
+    }
+    #card4 {
+        transition: none;
+    }
+} */
 
 /* footer */
 footer {
